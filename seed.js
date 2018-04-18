@@ -1,9 +1,9 @@
-const db = require('./models');
+var db = require('./models');
 
-const todo_list = [
-{title: 'Get Jerry a birthday gift', date: 'April 4'},
-{title: 'Help grandma solve world hunger', date: 'Forever'},
-{title: 'Go down to the old shop and have a look around', date: 'Whenever'}
+var todo_list = [
+{task: 'Get Jerry a birthday gift'},
+{task: 'Help grandma solve world hunger'},
+{task: 'Go down to the old shop and have a look around'}
 ];
 
 db.Todo.remove({}, function(err, items){
